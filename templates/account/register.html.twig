@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block body %}
+
+    <div class="container">
+
+        <div class="row my-5 py-5">
+            <div class="row">
+                <div class="col-md-3">&nbsp;</div>
+                <div class="col-6 ">
+                    <div class="alert bg-transparent border-light py-3 px-3">
+                        <h1 class="text-center">Sign Up</h1>
+                        <hr>
+                        {% for child in form.children %}
+                            {% for error in child.vars.errors %}
+                                <div class="bg-danger ps-2 py-2 pe-2">
+                                    {{ error.message }} <br>
+                                </div>
+                            {% endfor %}
+                        {% endfor %}
+                        {{ form_start(form) }}
+
+                        <div class="form-group">
+                            {{ form_label(form.firstName) }}
+                            {{ form_widget(form.firstName) }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_label(form.lastName) }}
+                            {{ form_widget(form.lastName) }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_label(form.email) }}
+                            {{ form_widget(form.email) }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_label(form.hash) }}
+                            {{ form_widget(form.hash) }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_label(form.passwordConfirm) }}
+                            {{ form_widget(form.passwordConfirm) }}
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn mybtn btn-primary my-3">
+                                Sign Up
+                            </button>
+                            <p>By signing up, you accept the <a href="">terms of use</a></p>
+                        </div>
+                        <div class="form-group">
+                            <p class="text-center"><a href="{{ path('account_login') }}" id="signin">You already have an account?</a></p>
+                        </div>
+
+                        {{ form_end(form) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

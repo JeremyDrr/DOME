@@ -1,0 +1,249 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+
+    <!-- ======= LANDING IMAGE ======= -->
+    <section id="hero" class="d-flex align-items-center">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+                    <h1>Open Distributed Marketplace for Europe</h1>
+                    <h2>Browse through items and services</h2>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="{{path('ads_index')}}" class="btn-get-started scrollto">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="assets/img/logo.png" class="img-fluid animated" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section><!-- END LANDING IMAGE -->
+
+    <main>
+
+        <!-- ======= About Us Section ======= -->
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>About Us</h2>
+                </div>
+
+                <div class="row content">
+                    <div class="col-lg-6">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua.
+                        </p>
+                        <ul>
+                            <li><i class="ri-check-double-line"></i> DOME's platform is designed with the user in mind, offering a seamless and intuitive experience that makes accessing cloud-to-edge services a breeze.</li>
+                            <li><i class="ri-check-double-line"></i> With a curated selection of cutting-edge services, including cloud-to-edge solutions and artificial intelligence tools, DOME offers everything your business needs to succeed in the digital age.</li>
+                            <li><i class="ri-check-double-line"></i> DOME prioritizes the security and privacy of its customers, operating according to strict security, energy, and resource efficiency, data protection, and ethical standards. This ensures that your business can focus on growth, knowing that its data and operations are in good hands.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <p>
+                            DOME is a next-generation cloud-to-edge marketplace platform, designed to support businesses of all sizes in their digital transformation journey. We are dedicated to providing a secure, user-friendly, and inclusive environment for our customers to access a curated selection of cutting-edge services, while upholding the highest standards of security, energy and resource efficiency, data protection, and ethical principles. Our mission is to empower businesses with the tools they need to succeed in the digital age, and we're excited to welcome you to the DOME community.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End About Us Section -->
+
+        <!-- ======= Why Us Section ======= -->
+        <section id="why-us" class="why-us section-bg">
+            <div class="container-fluid" data-aos="fade-up">
+
+                <div class="row">
+
+                    <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+                        <div class="content">
+                            <h3>You are still hesitating? <strong>Take a look at our priorities</strong></h3>
+                            <p>
+                                Join DOME today and tap into a world of cloud-to-edge services, where transparency, vendor independence, and security come together to help you drive your business forward.
+                            </p>
+                        </div>
+
+                        <div class="accordion-list">
+                            <ul>
+                                <li>
+                                    <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Integration and Seamlessness <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                    <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                                        <p>
+                                            DOME integrates state-of-the-art identity and access management services, offering a seamless end-user experience that brings together a wide range of cloud-to-edge services in one place.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Vendor Neutrality <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                    <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                                        <p>
+                                            With strict vendor neutrality, DOME ensures fair and unbiased competition, giving businesses access to the best services on the market, free from any vendor-specific bias.
+                                        </p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Trusted and Secure <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                    <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                                        <p>
+                                            DOME operates with a strong focus on security and privacy, putting in place the necessary mechanisms to ensure that your data and operations are protected at all times. With clear rules for open, fair, and transparent functioning, DOME is a trusted and secure platform that you can rely on.
+                                        </p>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("../public/assets/img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+                </div>
+
+            </div>
+        </section><!-- End Why Us Section -->
+
+        <!-- ======= Cta Section ======= -->
+        <section id="cta" class="cta">
+            <div class="container" data-aos="zoom-in">
+
+                <div class="row">
+                    <div class="col-lg-9 text-center text-lg-start">
+                        <h3>Join the network today!</h3>
+                        <p>Don't miss out on the opportunity to access a wide range of cutting-edge cloud-to-edge services through a single EU portal. With DOME's user-friendly platform and strong customer focus, you can transform your business operations and stay ahead of the competition. Take the first step by clicking the 'Join DOME Today' button.</p>
+                    </div>
+                    <div class="col-lg-3 cta-btn-container text-center">
+                        <a class="cta-btn align-middle" href="{{ path('account_register') }}">Join DOME Today</a>
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Cta Section -->
+
+        <!-- ======= Portfolio Section ======= -->
+        <section id="portfolio" class="portfolio">
+            <div class="container-fluid" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Recent Offers</h2>
+                    <p>
+                        Take a quick look at our last offers from the private and public sector.
+                    </p>
+                </div>
+
+                <div class="row">
+                    {% for data in ads %}
+
+                        {% include '/ads/_ad.html.twig' with {'ad': data.article} %}
+
+                    {% endfor %}
+                </div>
+
+            </div>
+        </section><!-- End Portfolio Section -->
+
+        <!-- ======= Frequently Asked Questions Section ======= -->
+        <section id="faq" class="faq section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+
+                <div class="faq-list">
+                    <ul>
+                        <li data-aos="fade-up" data-aos-delay="100">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">What is DOME? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                                <p>
+                                    DOME is a cloud-to-edge middleware platform that offers an online marketplace for cloud users to access a variety of services, such as predictive analytics, data visualization, Artificial Intelligence, and more.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="200">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">What services does DOME offer? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    DOME offers a range of cloud-to-edge services, including predictive analytics, data visualization, Artificial Intelligence, and more. Our services are compliant with a pre-defined set of EU rules and requirements.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="300">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">How does DOME ensure security, privacy, and ethical standards? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    DOME is operated according to strict security, privacy, and ethical standards. Our platform includes a curation and vetting process for services offered, ensuring that all services comply with relevant regulations and ethical requirements.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li data-aos="fade-up" data-aos-delay="400">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">What is the revenue model for DOME? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    DOME has an agile and future-proof revenue model designed to ensure the long-term commercial viability of the platform. Our model ensures unbiased competition and strict vendor neutrality, while also integrating trusted payment services to facilitate transactions.
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </section><!-- End Frequently Asked Questions Section -->
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Contact</h2>
+                    <p>
+                        If you have any remark, any idea, do not hesitate to contact us by filling the contact form bellow.
+                    </p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-6 offset-3">
+                        <div class="card border-light php-email-form">
+                            {{ form_start(form) }}
+                            <div class="form-group my-3 ps-3 pe-3">
+                                {{ form_label(form.email) }}
+                                {{ form_widget(form.email) }}
+                            </div>
+                            <div class="form-group my-3 ps-3 pe-3">
+                                {{ form_label(form.topic) }}
+                                {{ form_widget(form.topic) }}
+                            </div>
+                            <div class="form-group my-3 ps-3 pe-3">
+                                {{ form_label(form.content) }}
+                                {{ form_widget(form.content) }}
+                            </div>
+                            <div class="form-group my-3 ps-3 pe-3 text-center">
+                                <button type="submit" class="btn btn-outline-success">Send</button>
+                            </div>
+
+                            {{ form_end(form) }}
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Contact Section -->
+
+    </main>
+
+{% endblock %}

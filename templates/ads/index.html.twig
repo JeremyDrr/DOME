@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Offers{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="my-5">
+            Offers
+            <i class="fa fa-paperclip"></i>
+        </h1>
+
+        {% if pagination.data|length == 0 %}
+            <h1 class="text-center my-5">Oops! There is no offer right now</h1>
+            <h2 class="text-center py-lg-0 mb-5">Reload the page lage</h2>
+        {% endif %}
+
+        <div class="row mb-5">
+            {% for ad in pagination.data|sort %}
+                {% include 'ads/_ad.html.twig' %}
+            {% endfor %}
+
+        </div>
+
+        {% if pagination.pages >= 2 %}
+            {{ pagination.display }}
+        {% endif %}
+
+    </div>
+{% endblock %}
